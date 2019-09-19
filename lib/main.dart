@@ -170,7 +170,7 @@ class _HomeState extends State<Home> {
             duration: Duration(seconds: 3),
           );
 
-          //Mostrar Snackbar
+          //Mostrar Snackbar na parte inferior da tela
           Scaffold.of(context).removeCurrentSnackBar();
           Scaffold.of(context).showSnackBar(snack);
         });
@@ -178,7 +178,7 @@ class _HomeState extends State<Home> {
     );
   }
 
-  /**/
+
   //Função para pegar os dados do arquivo
   Future<File> _getFile() async{
     //variavel diretorio recebe o caminho direto do getApplication...
